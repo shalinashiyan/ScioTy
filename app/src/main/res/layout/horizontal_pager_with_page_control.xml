@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="0dp"></TextView>
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text2"
+            android:src="@drawable/scioty_logo3" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V1.0.0, Patent Pending"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="14dp"></TextView>
+
+
+        <LinearLayout
+            android:id="@+id/set"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:weightSum="2">
+
+
+            <com.ideabytes.scioty.HorizontalPagerWithPageControl
+                android:id="@+id/horizontal_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mainscreen_slide1"
+                    android:textColor="@color/network"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mainscreen_slide2"
+                    android:textColor="@color/network"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mainscreen_slide3"
+                    android:textColor="@color/network"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mainscreen_slide4"
+                    android:textColor="@color/network"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mainscreen_slide5"
+                    android:textColor="@color/network"
+                    android:textSize="14sp" />
+            </com.ideabytes.scioty.HorizontalPagerWithPageControl>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_in_auto_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"></ProgressBar>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/bttm_bttn_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textAllCaps="true"
+            android:text="@string/specCreateAccount"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/btnSignIN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:background="@color/bttm_bttn_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/specSignIn"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>
+

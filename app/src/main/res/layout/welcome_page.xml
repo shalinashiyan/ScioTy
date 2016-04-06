@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+
+        android:textSize="0dp"></TextView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scioty_logo3"
+        android:layout_below="@id/text2"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome"
+        style="@style/textFont"
+        android:text="Welcome to ScioTy: Waiting for Request!"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/welcome"
+        android:textSize="40dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome2"
+        style="@style/textFont"
+        android:text="V1.0.0, Patent Pending"
+        android:textSize="14sp"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/sign_out_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="signOut"
+        android:text="Sign out" />
+
+</RelativeLayout>

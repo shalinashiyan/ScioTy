@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="network">#1c3664</color>
+    <color name="bttm_bttn_bg">#3facef</color>
+    <color name="hint_text_color">#bfced8</color>
+    <color name="disarm_text_color">#aec3ce</color>
+    <color name="divider_color">#aec3ce</color>
+    <color name="events_date_bg">#dfe8ef</color>
+    <color name="date_color">#000033</color>
+    <color name="gip_right_text_color">#bfced8</color>
+    <color name="gip_left_text_color">#aec3ce</color>
+    <color name="camera_name_bg">#dfe8ef</color>
+    <color name="blue">#1E90FF</color>
+    <color name="blue_text_color">#3b9be2</color>
+    <color name="settings_title_bg">#aec3ce</color>
+    <color name="gray_bg">#F2F2F2</color>
+    <color name="gray_bg2">#E2E2E2</color>
+    <color name="tab_bg">#f2f5f7</color>
+    <color name="progressbar_grey">#666666</color>
+    <color name="progressbar_blue">#38B0DE</color>
+    <color name="progressbar_white">#FFFFFF</color>
+    <color name="gray">#FFB3B3B3</color>
+    <color name="sky_blue">#0055FF</color>
+    <color name="dark_blue">#FF000033</color>
+    <color name="delete_red">#ee4036</color>
+    <color name="blue_bg_color">#ff3facef</color>
+    <color name="gray_cancel">#aec3ce</color>
+    <color name="gray_text">#aec3ce</color>
+    <color name="light_gray">#d2d2d2</color>
+    <color name="medium_gray">#a2a2a2</color>
+    <color name="blur_bg">#44000000</color>
+    <color name="arm_item_text_color">#aec3ce</color>
+    <color name="arm_item_seperator">#FF909090</color>
+    <color name="events_settings_bg">#eaf0f4</color>
+    <color name="rename_camera_name">#66cc00</color>
+    <color name="events_ok">#66cc00</color>
+    <color name="bttn_gray">#FFc3c3c3</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <item name="green" type="color">#008000</item>
+    <item name="red" type="color">#FF0000</item>
+    <item name="orange" type="color">#ef5721</item>
+    <item name="black" type="color">#000000</item>
+    <item name="white" type="color">#ffffff</item>
+    <item name="btnDisable" type="color">#8F3300</item>
+    <item name="btnDisableText" type="color">#452300</item>
+
+</resources>

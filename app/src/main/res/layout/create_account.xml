@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/navigation"
+            style="@style/textFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="@string/less_than"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/progressbar_white"
+            android:textSize="@dimen/back"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/create_account"
+            style="@style/textFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/specCreateAccount"
+            android:visibility="gone"
+            android:textColor="@color/progressbar_white"
+            android:textSize="@dimen/top_bar"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fields"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/scioty_small" />
+
+    <LinearLayout
+        android:id="@+id/fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V1.0.0, Patent Pending"
+            android:gravity="center"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="14dp"></TextView>
+
+        <EditText
+            android:id="@+id/etUserName"
+            style="@style/textFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="15dp"
+            android:hint="@string/specUserName"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_text_color"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="@dimen/title" />
+
+        <TextView
+            android:id="@+id/textsp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp"></TextView>
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/textFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="15dp"
+            android:hint="@string/specEmailText"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_text_color"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="@dimen/title" />
+
+        <TextView
+            android:id="@+id/textsp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp"></TextView>
+
+        <EditText
+            android:id="@+id/etPhone"
+            style="@style/textFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="15dp"
+            android:hint="@string/specPhone"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_text_color"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="@dimen/title" />
+
+        <TextView
+            android:id="@+id/textsp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp"></TextView>
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/textFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/progressbar_white"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="20dp"
+            android:hint="@string/specPasswordText"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/etConfirmPassword"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_text_color"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="@dimen/title" />
+
+        <TextView
+            android:id="@+id/textsp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp"></TextView>
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            style="@style/textFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/progressbar_white"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="20dp"
+            android:hint="@string/specConfirmPasswordtext"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_text_color"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="@dimen/title" />
+
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"></ProgressBar>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textsp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_create_account"
+        android:background="@color/progressbar_white"
+        android:text=""
+        android:textSize="2dp"></TextView>
+
+
+    <Button
+        android:id="@+id/btn_create_account"
+        style="@style/textFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bttm_bttn_bg"
+        android:text="@string/specCreateAccount"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

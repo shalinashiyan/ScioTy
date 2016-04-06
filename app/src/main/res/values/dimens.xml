@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="relativeLayout1_textview">5dp</dimen>
+    <dimen name="percentage_textview">20dp</dimen>
+    <dimen name="lefttextbelowseekbar_textview">20dp</dimen>
+    <dimen name="righttextbelowseekbar_textview">20dp</dimen>
+    <dimen name="title">20sp</dimen>
+    <dimen name="list_label">17sp</dimen>
+    <dimen name="text">16sp</dimen>
+    <dimen name="top_bar">13sp</dimen>
+    <dimen name="app_icons">12sp</dimen>
+    <dimen name="dock">10sp</dimen>
+    <dimen name="back">20sp</dimen>
+
+</resources>
+

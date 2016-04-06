@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/navigation"
+            style="@style/textFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="@string/less_than"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/progressbar_white"
+            android:textSize="@dimen/back"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/create_account"
+            style="@style/textFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/specSignIn"
+            android:visibility="gone"
+            android:textColor="@color/progressbar_white"
+            android:textSize="@dimen/top_bar"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentTop="true"
+        android:textSize="30dp"></TextView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text5"
+        android:src="@drawable/scioty_small"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="V1.0.0, Patent Pending"
+        android:layout_below="@id/logo"
+        android:gravity="center"
+        android:textSize="14dp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/etUserName"
+            style="@style/textFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="15dp"
+            android:hint="@string/specUserName"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textColorHint="@color/hint_text_color"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="@dimen/title" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="2dp"></TextView>
+
+        <EditText
+            android:id="@+id/etPass"
+            style="@style/textFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="20dp"
+            android:hint="@string/spec_pwd_hint"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textColorHint="@color/hint_text_color"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="@dimen/title" />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="@string/specResetPassword"
+            android:textColor="@color/black" />
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"></ProgressBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mLlayoutwhitebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text=""
+            android:textSize="2dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textsp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/resendActivation"
+            android:background="@color/progressbar_white"
+            android:text=""
+            android:textSize="2dp"></TextView>
+
+
+        <Button
+            android:id="@+id/btnsignIn"
+            android:textAllCaps="true"
+            style="@style/textFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/bttm_bttn_bg"
+            android:text="@string/specSignIn"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title" />
+    </LinearLayout>
+
+
+</RelativeLayout>
